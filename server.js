@@ -5,8 +5,7 @@ const app = express();
 app.use(express.json());
 app.use(express.static('public'));
 // Yhteysmerkkijono Dockerin MongoDB-konttiin
-const mongoURI =
-  'mongodb://root:password@mongo:27017/resepti_arkisto?authSource=admin';
+const mongoURI = 'mongodb://mongo:27017/resepti_arkisto';
 
 mongoose
   .connect(mongoURI)
