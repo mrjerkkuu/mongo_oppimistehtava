@@ -32,7 +32,7 @@ Jotta voit ajaa projektin, tietokoneellasi tulee olla asennettuna:
 2. **Käynnistä sovellus ja tietokanta:**
    Avaa terminaali projektikansiossa ja aja:
    ```bash
-   docker-compose up --build
+   docker compose up -d
    ```
 3. **Pääsy sovellukseen:**
    - **Frontend:** [http://localhost:3000](http://localhost:3000)
