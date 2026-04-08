@@ -63,13 +63,13 @@ Tallentaa käyttäjien jättämät arvostelut ja kommentit.
 
 **Käyttäjä luo uuden profiilin:**
 
-````javascript
+```javascript
 db.users.insertOne({
-  username: "TestiKokki",
-  email: "testi@kokki.fi",
-  created_at: new Date()
-})```
-
+  username: 'TestiKokki',
+  email: 'testi@kokki.fi',
+  created_at: new Date(),
+});
+```
 
 **Käyttäjä tallentaa uuden reseptin ainesosineen ja vaiheineen.**
 
@@ -83,7 +83,7 @@ db.recipes.insertOne({
   prep_time: 5,
   created_at: new Date(),
 });
-````
+```
 
 - **Käyttäjä jättää kommentin ja arvosanan reseptille.**
 
