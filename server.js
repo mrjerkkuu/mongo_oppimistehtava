@@ -17,8 +17,9 @@ mongoose
 const recipeSchema = new mongoose.Schema({
   title: { type: String, required: true },
   category: String,
-  ingredients: [String],
-  instructions: String,
+  ingredients: [String], // Taulukko merkkijonoja
+  instructions: [String], // Päivitetty: Taulukko merkkijonoja
+  prep_time: Number,
   created_at: { type: Date, default: Date.now },
 });
 
