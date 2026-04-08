@@ -10,5 +10,17 @@
     "username": "MakuMaisteri",
     "email": "maku@esimerkki.fi",
     "created_at": { "$date": "2024-03-20T11:00:00Z" }
+  },
+  {
+    "_id": { "$oid": "651a1b1b1b1b1b1b1b1b1b13" },
+    "username": "KeittiöKuningas",
+    "email": "kuningas@esimerkki.fi",
+    "created_at": { "$date": "2024-04-01T08:30:00Z" }
+  },
+  {
+    "_id": { "$oid": "651a1b1b1b1b1b1b1b1b1b14" },
+    "username": "SafkaSimulaattori",
+    "email": "simulaattori@esimerkki.fi",
+    "created_at": { "$date": "2024-04-02T14:15:00Z" }
   }
 ]

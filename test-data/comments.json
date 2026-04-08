@@ -1,6 +1,6 @@
 [
   {
-    "recipe_id": { "$oid": "651a2c2c2c2c2c2c2c2c2c21" },
+    "recipe_id": { "$oid": "651a2c2c2c2c2c2c2c2c2c24" },
     "user_id": { "$oid": "651a1b1b1b1b1b1b1b1b1b12" },
     "text": "Todella nopea ja maistuva arkiruoka!",
     "rating": 5,
@@ -15,6 +15,13 @@
     "date": { "$date": "2024-04-05T10:00:00Z" }
   },
   {
+    "recipe_id": { "$oid": "651a2c2c2c2c2c2c2c2c2c21" },
+    "user_id": { "$oid": "651a1b1b1b1b1b1b1b1b1b13" },
+    "text": "Klassikko! Lisäsin sekaan vähän ketsuppia, toimi loistavasti.",
+    "rating": 4,
+    "date": { "$date": "2024-04-05T12:00:00Z" }
+  },
+  {
     "recipe_id": { "$oid": "651a2c2c2c2c2c2c2c2c2c22" },
     "user_id": { "$oid": "651a1b1b1b1b1b1b1b1b1b11" },
     "text": "Aito carbonara ilman kermaa on parasta!",
@@ -27,5 +34,12 @@
     "text": "Todella täyteläinen maku, juuri kuten lohikeiton kuuluu olla.",
     "rating": 4,
     "date": { "$date": "2024-04-07T18:00:00Z" }
+  },
+  {
+    "recipe_id": { "$oid": "651a2c2c2c2c2c2c2c2c2c23" },
+    "user_id": { "$oid": "651a1b1b1b1b1b1b1b1b1b13" },
+    "text": "Tilli on tässä se salaisuus. Paras lohikeitto-ohje pitkään aikaan!",
+    "rating": 5,
+    "date": { "$date": "2024-04-07T20:00:00Z" }
   }
 ]
