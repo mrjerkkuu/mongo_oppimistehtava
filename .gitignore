@@ -1,0 +1,25 @@
+# Riippuvuudet (Node.js)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ympäristömuuttujat (Sisältävät salaisuuksia)
+.env
+.env.local
+
+# Tietokannan tallennuskansio (vastaa docker-composea)
+data/
+
+# Docker ja tietokantadata
+# Jos Docker-compose tallentaa datan paikalliseen kansioon
+mongo-data/
+
+# Käyttöjärjestelmän tiedostot
+.DS_Store
+Thumbs.db
+
+# IDE (Visual Studio Code, IntelliJ jne.)
+.vscode/
+.idea/
+*.swp
