@@ -23,7 +23,12 @@ Jotta voit ajaa projektin, tietokoneellasi tulee olla asennettuna:
 
 ## 📦 Asennus ja pystytys
 
-1. **Lataa projektin tiedostot** koneellesi.
+1. **Kloonaa repositorio koneellesi:**
+   Avaa terminaali/konsoli ja aja komento:
+   ```bash
+   git clone https://github.com/mrjerkkuu/mongo_oppimistehtava
+   cd mongo_oppimistehtava
+   ```
 2. **Käynnistä sovellus ja tietokanta:**
    Avaa terminaali projektikansiossa ja aja:
    ```bash
