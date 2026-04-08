@@ -1,0 +1,31 @@
+[
+  {
+    "recipe_id": { "$oid": "651a2c2c2c2c2c2c2c2c2c21" },
+    "user_id": { "$oid": "651a1b1b1b1b1b1b1b1b1b12" },
+    "text": "Todella nopea ja maistuva arkiruoka!",
+    "rating": 5,
+    "date": { "$date": "2024-03-22T09:30:00Z" }
+  },
+
+  {
+    "recipe_id": { "$oid": "651a2c2c2c2c2c2c2c2c2c21" },
+    "user_id": { "$oid": "651a1b1b1b1b1b1b1b1b1b12" },
+    "text": "Jauhelihamakaroonia, makari jauheliha makaroonilaatikkoa tai maka jauheli makaronipas makaroonijauhelihapastaa tai tämmöstä niinkun sekotusta että sekotetaan makaroni jauhelihakas sekasi ja tehdään sellanen makaroniloota tai semmonin ni",
+    "rating": 5,
+    "date": { "$date": "2024-04-05T10:00:00Z" }
+  },
+  {
+    "recipe_id": { "$oid": "651a2c2c2c2c2c2c2c2c2c22" },
+    "user_id": { "$oid": "651a1b1b1b1b1b1b1b1b1b11" },
+    "text": "Aito carbonara ilman kermaa on parasta!",
+    "rating": 5,
+    "date": { "$date": "2024-04-06T14:30:00Z" }
+  },
+  {
+    "recipe_id": { "$oid": "651a2c2c2c2c2c2c2c2c2c23" },
+    "user_id": { "$oid": "651a1b1b1b1b1b1b1b1b1b12" },
+    "text": "Todella täyteläinen maku, juuri kuten lohikeiton kuuluu olla.",
+    "rating": 4,
+    "date": { "$date": "2024-04-07T18:00:00Z" }
+  }
+]

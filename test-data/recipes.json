@@ -1,0 +1,95 @@
+[
+  {
+    "_id": { "$oid": "651a2c2c2c2c2c2c2c2c2c21" },
+    "title": "Makaronilaatikko",
+    "category": "Pääruoka",
+    "author_id": { "$oid": "651a1b1b1b1b1b1b1b1b1b11" },
+    "ingredients": [
+      "400g jauhelihaa",
+      "400g makaronia",
+      "1 sipuli",
+      "3 kananmunaa",
+      "7dl maitoa",
+      "Suolaa",
+      "Mustippuria"
+    ],
+    "instructions": [
+      "Keitä makaronit puolikypsiksi.",
+      "Ruskista jauheliha ja hienonnettu sipuli. Mausta suolalla ja pippurilla.",
+      "Sekoita maito ja kananmunat munamaidoksi.",
+      "Sekoita makaronit ja liha uunivuoassa. Kaada munamaito päälle.",
+      "Paista 175 asteessa noin 45-60 minuuttia."
+    ],
+    "prep_time": 60,
+    "created_at": { "$date": "2024-04-01T12:00:00Z" }
+  },
+  {
+    "_id": { "$oid": "651a2c2c2c2c2c2c2c2c2c22" },
+    "title": "Pasta Carbonara",
+    "category": "Pääruoka",
+    "author_id": { "$oid": "651a1b1b1b1b1b1b1b1b1b12" },
+    "ingredients": [
+      "300g spagettia",
+      "250g guancialea",
+      "250g parmesaania",
+      "2 kananmunan keltuaista",
+      "Runsaasti mustapippuria"
+    ],
+    "instructions": [
+      "Keitä spagetti al dente suolatussa vedessä.",
+      "Paista guanciale rapeaksi pannulla omassa rasvassaan.",
+      "Sekoita keltuaiset ja raastettu parmesaani kulhossa tasaiseksi tahnaksi.",
+      "Sekoita spagetti ja guanciale. Ota pannu pois levyltä.",
+      "Lisää muna-juustoseos ja hieman keitinvettä. Sekoita nopeasti kermaiseksi.",
+      "Viimeistele runsaalla mustapippurilla."
+    ],
+    "prep_time": 20,
+    "created_at": { "$date": "2024-04-02T15:00:00Z" }
+  },
+  {
+    "_id": { "$oid": "651a2c2c2c2c2c2c2c2c2c23" },
+    "title": "Lohikeitto",
+    "category": "Pääruoka",
+    "author_id": { "$oid": "651a1b1b1b1b1b1b1b1b1b11" },
+    "ingredients": [
+      "400g lohifileetä",
+      "1.5l vettä",
+      "2 kalaliemikuutiota",
+      "1 sipuli",
+      "5 maustepippuria",
+      "2 laakerinlehteä",
+      "8 perunaa",
+      "2dl ruokakermaa",
+      "2 rkl voita",
+      "Tilliä",
+      "Ruohosipulia"
+    ],
+    "instructions": [
+      "Kuumenna vesi ja liemikuutiot kiehumispisteeseen.",
+      "Lisää hienonnettu sipuli, maustepippurit ja laakerinlehdet.",
+      "Lisää paloitellut perunat ja keitä noin 10 minuuttia.",
+      "Lisää lohikuutiot. Hauduta kypsäksi, lisää kerma ja voi.",
+      "Ripottele päälle runsaasti tilliä ja ruohosipulia. Tarjoile ruisleivän kanssa."
+    ],
+    "prep_time": 45,
+    "created_at": { "$date": "2024-04-03T09:00:00Z" }
+  },
+  {
+    "_id": { "$oid": "651a2c2c2c2c2c2c2c2c2c21" },
+    "title": "Valkosipulipasta",
+    "category": "Pääruoka",
+    "author_id": { "$oid": "651a1b1b1b1b1b1b1b1b1b11" },
+    "ingredients": [
+      "400g spagettia",
+      "4 kynttä valkosipulia",
+      "0.5dl oliiviöljyä"
+    ],
+    "instructions": [
+      "Keitä pasta suolatussa vedessä.",
+      "Kuullota viipaloidut valkosipulit öljyssä pannulla.",
+      "Sekoita pasta ja öljy keskenään."
+    ],
+    "prep_time": 15,
+    "created_at": { "$date": "2024-03-21T12:00:00Z" }
+  }
+]
