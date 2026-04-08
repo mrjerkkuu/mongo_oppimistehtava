@@ -59,8 +59,6 @@ Tallentaa käyttäjien jättämät arvostelut ja kommentit.
 
 ### Create (Luo)
 
-- ### Create (Luo)
-
 **Käyttäjä luo uuden profiilin:**
 
 ```javascript
@@ -109,12 +107,12 @@ db.recipes.find({ category: 'Pääruoka' }).pretty();
 
 ```javascript
 // 1. Haetaan reseptin tiedot
-db.recipes.findOne({ title: 'Lohikeitto' });
+db.recipes.findOne({ title: 'Makaronilaatikko' });
 
 // 2. Haetaan kaikki kommentit kyseiselle reseptille
 db.comments
   .find({
-    recipe_id: db.recipes.findOne({ title: 'Lohikeitto' })._id,
+    recipe_id: db.recipes.findOne({ title: 'Makaronilaatikko' })._id,
   })
   .pretty();
 ```
