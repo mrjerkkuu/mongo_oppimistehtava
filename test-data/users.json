@@ -7,8 +7,8 @@
   },
   {
     "_id": { "$oid": "651a1b1b1b1b1b1b1b1b1b12" },
-    "username": "MakuMaisteri",
-    "email": "maku@esimerkki.fi",
+    "username": "Niilo22",
+    "email": "niilo22@esimerkki.fi",
     "created_at": { "$date": "2024-03-20T11:00:00Z" }
   },
   {

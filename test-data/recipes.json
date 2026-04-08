@@ -27,7 +27,7 @@
     "_id": { "$oid": "651a2c2c2c2c2c2c2c2c2c22" },
     "title": "Pasta Carbonara",
     "category": "Pääruoka",
-    "author_id": { "$oid": "651a1b1b1b1b1b1b1b1b1b12" },
+    "author_id": { "$oid": "651a1b1b1b1b1b1b1b1b1b13" },
     "ingredients": [
       "300g spagettia",
       "250g guancialea",
