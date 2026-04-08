@@ -59,24 +59,97 @@ Tallentaa käyttäjien jättämät arvostelut ja kommentit.
 
 ### Create (Luo)
 
-- Käyttäjä luo uuden profiilin.
-- Käyttäjä tallentaa uuden reseptin ainesosineen ja vaiheineen.
+- ### Create (Luo)
+
+**Käyttäjä luo uuden profiilin:**
+
+````javascript
+db.users.insertOne({
+  username: "TestiKokki",
+  email: "testi@kokki.fi",
+  created_at: new Date()
+})```
+
+
+**Käyttäjä tallentaa uuden reseptin ainesosineen ja vaiheineen.**
+
+```javascript
+db.recipes.insertOne({
+  title: 'Pika-omeletti',
+  category: 'Aamiainen',
+  author_id: db.users.findOne({ username: 'TestiKokki' })._id,
+  ingredients: ['2 kananmunaa', 'tilkka maitoa', 'suolaa'],
+  instructions: ['Riko munat kulhoon', 'Lisää maito', 'Paista pannulla'],
+  prep_time: 5,
+  created_at: new Date(),
+});
+````
+
 - **Käyttäjä jättää kommentin ja arvosanan reseptille.**
+
+```javascript
+db.comments.insertOne({
+  recipe_id: db.recipes.findOne({ title: 'Pika-omeletti' })._id,
+  user_id: db.users.findOne({ username: 'MakuMaisteri' })._id,
+  text: 'Todella nopea aamupala!',
+  rating: 5,
+  date: new Date(),
+});
+```
 
 ### Read (Lue)
 
-- Haetaan kaikki tietyn kategorian (esim. "Pääruoka") reseptit.
-- Haetaan tietty resepti ja siihen liittyvät kommentit `recipe_id`-kentän avulla.
+**Haetaan kaikki tietyn kategorian (esim. "Pääruoka") reseptit.**
+
+```javascript
+db.recipes.find({ category: 'Pääruoka' }).pretty();
+```
+
+**Haetaan tietty resepti ja siihen liittyvät kommentit `recipe_id`-kentän avulla.**
+
+```javascript
+// 1. Haetaan reseptin tiedot
+db.recipes.findOne({ title: 'Lohikeitto' });
+
+// 2. Haetaan kaikki kommentit kyseiselle reseptille
+db.comments
+  .find({
+    recipe_id: db.recipes.findOne({ title: 'Lohikeitto' })._id,
+  })
+  .pretty();
+```
 
 ### Update (Päivitä)
 
-- Reseptin tietojen, kuten valmistusajan tai ohjeiden, muokkaaminen.
-- Käyttäjän sähköpostiosoitteen päivittäminen.
+**Reseptin tietojen, kuten valmistusajan tai ohjeiden, muokkaaminen.**
+
+```javascript
+db.recipes.updateOne({ title: 'Lohikeitto' }, { $set: { prep_time: 50 } });
+```
+
+**Käyttäjän sähköpostiosoitteen päivittäminen.**
+
+```javascript
+db.users.updateOne(
+  { username: 'KokkiKakkonen' },
+  { $set: { email: 'uusi.osoite@esimerkki.fi' } },
+);
+```
 
 ### Delete (Poista)
 
-- Reseptin poistaminen.
-- Yksittäisen kommentin poistaminen.
+**Reseptin poistaminen.**
+
+```javascript
+db.recipes.deleteOne({ title: 'Pika-omeletti' });
+```
+
+**Yksittäisen kommentin poistaminen.**
+
+```javascript
+// Poistetaan kommentti, jonka teksti alkaa tietyllä tavalla
+db.comments.deleteOne({ text: /Todella/ });
+```
 
 ---
 
